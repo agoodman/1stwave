@@ -2,8 +2,13 @@
 <html>
 <head>
   <title>FirstWave Venture Center</title>
-  <link rel="stylesheet" src="/stylesheets/style.css" media="screen" />
-	<script type="text/javascript" charset="utf-8" src="/javascripts/application.js"></script>
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  
+	
+	<script src="javascripts/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="javascripts/slidesjs/source/jquery.slides.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascripts/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8" src="javascripts/application.js"></script>
 </head>
 <body>
 
@@ -27,11 +32,20 @@
 <a name="ventures" />
 <section id="ventures">
 	<h1>ventures</h1>
-	<ul>
-		<li><a href="http://getdrawer.com">Drawer</a></li>
-		<li><a href="http://buspl.us">Bus Plus</a></li>
-		<li><a href="http://briefskate.com">Brief Skate</a></li>
-	</ul>
+	
+	<div id="ventureSlideshow" style="display:none;">
+		<img id="logo1" src="http://placehold.it/600x300&text=venture1"/>
+		<img id="logo2" src="http://placehold.it/600x300&text=venture2"/>
+	</div>
+	
+	<div id="displayedVentureBlurb">
+	</div>
+	
+	<div id="ventureBlurbs" style="display:none;">
+		<p id="blurb1">This is blurb 1</p>
+		<p id="blurb2">This is blurb 2</p>
+	</div>
+
 </section>
 
 <a name="events" />
@@ -63,4 +77,5 @@
 </footer>
 
 </body>
+
 </html>
