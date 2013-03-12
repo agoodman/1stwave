@@ -25,7 +25,6 @@
 		});
 		
 		$("nav a").click(function(){
-			console.log($(this).attr("href"));
 			$("html,body").animate({
 			    scrollTop: $($(this).attr("href")).offset().top
 			 }, 250);
