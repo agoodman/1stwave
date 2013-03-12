@@ -11,9 +11,54 @@
 	height: 300px;
 }
 
+* { margin: 0; padding: 0; }
+
+body {
+	font-family: Helvetica Neue;
+}
+
+hr {
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+header, section, footer { 
+	width: 100%;
+	display: block;
+}
+
+header {
+	z-index: 999;
+	position: fixed;
+	height: 50px;
+	background: #ddd;
+	line-height: 50px;
+	font-size: 25px;
+}
+
+header ul { 
+	list-style: none;
+}
+
+header nav li {
+	float: left;
+	margin-left: 25px;
+}
+
+header nav ul:after {
+	content: '.';
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+header + section {
+	padding-top: 50px;
+}
+
 section {
 	clear: both;
 	width: 100%;
-	margin-top: 100px;
+	margin-bottom: 100px;
 }
-

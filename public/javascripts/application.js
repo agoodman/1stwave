@@ -4,7 +4,7 @@
 			height: 300,
 			play: {
 				active: true,
-				interval: 2000,
+				interval: 6000,
 				effect: "fade",
 				auto:true
 			},
@@ -26,7 +26,7 @@
 		
 		$("nav a").click(function(){
 			$("html,body").animate({
-			    scrollTop: $($(this).attr("href")).offset().top
+			    scrollTop: $($(this).attr("href")).offset().top-100
 			 }, 250);
 			return false;
 		});
@@ -39,5 +39,5 @@
 
 
 function changeVentureBlurb(number){
-	$("#displayedVentureBlurb").html($("#blurb"+number).html());
+	$("#displayedVentureBlurb").html($("[index='blurb"+number+"']").html());
 }
