@@ -14,7 +14,18 @@
 * { margin: 0; padding: 0; }
 
 body {
-	font-family: Helvetica Neue;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	font-size: 1.25em;
+	font-weight: 200;
+	color: #111111;
 }
 
 hr {
@@ -30,10 +41,9 @@ header, section, footer {
 
 header {
 	z-index: 999;
-	position: fixed;
-	height: 50px;
+	/*position: fixed;*/
+	height: 100px;
 	background: #ddd;
-	line-height: 50px;
 	font-size: 25px;
 }
 
@@ -41,9 +51,35 @@ header ul {
 	list-style: none;
 }
 
+header nav {
+	width: 100%;
+	background-color: #ffffff;
+	line-height: 100px;
+}
+
+#logo {
+	background: url("../images/firstWaveLogo_tmp.jpg") no-repeat;
+	text-indent: -9999px;
+	width: 212px;
+	float: left;
+	margin-top: 30px;
+}
+
+header nav ul {
+	float: right;
+}
+
 header nav li {
 	float: left;
 	margin-left: 25px;
+	
+}
+
+header nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: .6em;
+	color: #b7b7b7 !important;
 }
 
 header nav ul:after {
@@ -58,7 +94,72 @@ header + section {
 }
 
 section {
+	padding-top: 30px;
 	clear: both;
 	width: 100%;
-	margin-bottom: 100px;
+	padding-bottom: 110px;
+}
+
+#hero {
+	width: 100%;
+	background: url("http://placekitten.com/2000/600") no-repeat;
+	color: #ffffff;
+	padding-bottom: 60px;
+}
+
+#heroStatement {
+	padding: 48px 0px 42px 0px;
+	background-color: rgba(41,175,206,.7);
+	margin-bottom: 20px;
+}
+
+#hero h1 {
+	font-size: 3em;
+}
+
+#hero h2 {
+	font-weight: 100;
+}
+
+
+button {
+	height: 118px;
+	font-size: 1.875em;
+	color: #29afce;
+	text-transform: uppercase;
+	border: none;
+	background-color: #ffffff;
+}
+
+.signUp {
+	background-color: #111111;
+	color: #ffffff;
+}
+
+section#welcome h1 {
+	font-size: 3.75em;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #29afce;
+}
+
+#welcomeIdealPeople {
+	background: #249ab6;
+}
+
+#ventures {
+	background: url("../images/tampa_skyline.jpg") no-repeat;
+}
+
+#venturesContentArea {
+	margin-left: 0;
+}
+
+#venturesContentArea h1 {
+	height: 204px;
+	background-color: rgba(219, 228, 66, .7);
+	text-align: center;
+	font-size: 3.75em;
+	font-style: italic;
+	font-weight: 100;
 }

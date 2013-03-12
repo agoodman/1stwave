@@ -2,82 +2,172 @@
 <html>
 <head>
   <title>FirstWave Venture Center</title>
-  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<script src="javascripts/jquery-1.9.1.js" type="text/javascript"></script>
 	<script src="javascripts/slidesjs/source/jquery.slides.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8" src="javascripts/application.js"></script>
+	<link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<header>
-<nav>
-	<ul>
-		<li>FirstWave Venture Center</li>
-		<li><a href="#welcome">welcome</a></li>
-		<li><a href="#ventures">ventures</a></li>
-		<li><a href="#events">events</a></li>
-	</ul>
-	<hr/>
-</nav>
-</header>
-
-<section id="welcome">
-	<h1>welcome</h1>
-	<p>long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long. long paragraph is long.</p>
-</section>
-
-<section id="ventures">
-	<h1>ventures</h1>
-	
-	<div id="ventureSlideshow" style="display:none;">
-		<img id="logo1" src="http://placehold.it/600x300&text=venture1"/>
-		<img id="logo2" src="http://placehold.it/600x300&text=venture2"/>
-		<img id="logo3" src="http://placehold.it/600x300&text=venture3"/>
-		<img id="logo4" src="http://placehold.it/600x300&text=venture4"/>
-		<img id="logo5" src="http://placehold.it/600x300&text=venture5"/>
+	<div class="container">
+		<header>
+			<nav>
+				<h1 id="logo">FirstWave Venture Center</h1>
+				<ul>
+					<li><a href="#welcome">welcome</a></li>
+					<li><a href="#ventures">ventures</a></li>
+					<li><a href="#events">events</a></li>
+					<li><a href="#coworking">work with us</a></li>
+					<li><a href="#footer">find us</a></li>
+				</ul>
+				<hr/>
+			</nav>
+		</header>
 	</div>
+
+		<section id="hero">
+			<div class="container">
+				<div class="row">
+					<div id="heroStatement" class="span6">
+						<h1>By Entrepreneurs, For Entrepreneurs</h1>
+						<h2>TampaBayWaVE is an 'by entrepreneur, for entrepreneur' non-profit that helps entrepreneurs turn ideas into growing tech ventures in Tampa Bay.</h2>
+					</div>
+				</div>
+			
+				<div class="row">
+					<button class="span3 signUp" id="signUp">Sign Up</button>
+					<button class="span3" id="explore">Explore</button>
+				</div>
+			</div>
 	
-	<div id="displayedVentureBlurb">
-	</div>
+		</section>
+
+		<section id="welcome">
+				<div class="container">
+					<div class="row">
+						<div id="welcomeBlurb" class="span8">
+							<h1>This is a catchy welcome statement</h1>
+							<p>Cupcake ipsum dolor sit amet. Pie bonbon croissant sweet roll I love lemon drops jelly-o cupcake I love. Brownie croissant gummi bears soufflé jelly-o jelly-o chocolate bar soufflé sesame snaps. Pastry carrot cake icing tart powder macaroon gummies macaroon marzipan. Jelly-o wypas bear claw candy canes jelly-o chupa chups marshmallow. Pastry carrot cake icing tart powder macaroon gummies macaroon marzipan. Jelly-o wypas bear claw candy canes jelly-o chupa chups marshmallow.</p>
+						</div>
+						<div id="welcomeIdealPeople" class="span4">
+							<h2>Psst...</h2>
+							<p>If you're one of these types, chances are we're perfect for you:</p>
+							<ul>
+								<li>Tech Startup</li>
+								<li>Tech Startup</li>
+								<li>Tech Startup</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<section id="ventures">
+			<div class="container">
+				<div class="row">
+					<div id="venturesContentArea" class="span12">
+						<h1>This is a catchy statement about meeting our snazzy tenants...</h1>
 	
-	<ul id="ventureBlurbs" style="display:none;">
-		<li index="blurb1"><p>This is blurb 1</p></li>
-		<li index="blurb2"><p>This is blurb 2</p></li>
-		<li index="blurb3"><p>This is blurb 3</p></li>
-		<li index="blurb4"><p>This is blurb 4</p></li>
-		<li index="blurb5"><p>This is blurb 5</p></li>
-	</ul>
+						<div id="ventureSlideshow" style="display:none;">
+							<img id="logo1" src="http://placehold.it/600x300&text=venture1"/>
+							<img id="logo2" src="http://placehold.it/600x300&text=venture2"/>
+							<img id="logo3" src="http://placehold.it/600x300&text=venture3"/>
+							<img id="logo4" src="http://placehold.it/600x300&text=venture4"/>
+							<img id="logo5" src="http://placehold.it/600x300&text=venture5"/>
+						</div>
+	
+						<div id="displayedVentureBlurb">
+						</div>
+		
+						<ul id="ventureBlurbs" style="display:none;">
+							<li index="blurb1"><p>This is blurb 1</p></li>
+							<li index="blurb2"><p>This is blurb 2</p></li>
+							<li index="blurb3"><p>This is blurb 3</p></li>
+							<li index="blurb4"><p>This is blurb 4</p></li>
+							<li index="blurb5"><p>This is blurb 5</p></li>
+						</ul>
+					</div> <!--end #venturesContentArea -->
+				</div>
+			</div>
+		</section>
 
-</section>
+		<section id="events">
+			<div id="container">
+				<div id="row">
+					<div class="span8" id="eventsComingUp">
+						<h1>Statement About Attending Events</h1>
+						<p>here there be events</p>
+						<span>Upcoming Events:</span>
+						<div id="eventsSoon">
+							<ul>
+								<li>
+									<h3>Public Open House</h3>
+									<p>March 15th, Friday</p>
+									<p>10AM - 4PM</p>
+									<p>Event description goes here</p>
+								</li>
+								<li>
+									<h3>TIE Event on Mobility</h3>
+									<p>March 22nd, Friday</p>
+									<p>5PM - 9PM</p>
+									<p>Event description goes here</p>
+								</li>
+							</ul>
+						</div>
+					</div><!--end #eventsComingUp-->
+	
+					<div class="span4" id="futureEvents">
+						<h4>We have so many exciting things planned for 2013. Don't forget to check back for...</h4>
+						<hr/>
+						<p>Some crazy weird event listing thing here</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-<section id="events">
-	<h1>events</h1>
-	<p>here there be events</p>
-	<ul>
-		<li>
-			<h3>Event1</h3>
-			<p>event1 description</p>
-		</li>
-		<li>
-			<h3>Event2</h3>
-			<p>event2 description</p>
-		</li>
-		<li>
-			<h3>Event3</h3>
-			<p>event3 description</p>
-		</li>
-		<li>
-			<h3>Event4</h3>
-			<p>event4 description</p>
-		</li>
-	</ul>
-</section>
+		<section id="coworking">
+	
+			<h1>Work with us. We'd love to have you.</h1>
+			<div class="coworkingOption">
+				<h2>Basic Coworking</h2>
+				<h3>$74.99</h3>
+			<h4>monthly</h4>
+			<p>Introductory pricing for first 25 coworkers. Regularly $99</p>
+			<p>Some crazy feature list thing</p>
+		</div>
+	
+		<div class="coworkingOption">
+			<h2>Reserved Coworking</h2>
+			<h3>$124.99</h3>
+			<h4>monthly</h4>
+			<p>Introductory pricing for first 25 coworkers. Regularly $149.99</p>
+			<p>Some crazy feature list thing</p>
+		</div>
+	
+		<div class="coworkingOption">
+			<h2>Premium Coworking</h2>
+			<h3>$300-$450</h3>
+			<h4>monthly</h4>
+			<p>Some crazy feature list thing</p>
+		</div>
+	
+		<div class="coworkingOption">
+			<h2>Corporate Coworking</h2>
+			<h3>$299</h3>
+			<h4>monthly</h4>
+			<p>Some crazy feature list thing</p>
+		</div>
+	
+	</section>
 
-<footer>
+	<footer>
 	&copy; Copyright 2013 Tampa Bay Wave. All Rights Reserved.
-</footer>
-
+	</footer>
+</div> <!--end #container -->
 </body>
 
 </html>
