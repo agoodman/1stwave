@@ -3,10 +3,10 @@
 			width: 600,
 			height: 300,
 			play: {
-				active: true,
+				active: false,
 				interval: 6000,
 				effect: "fade",
-				auto:true
+				auto:false
 			},
 			navigation : {
 				active: true
