@@ -23,6 +23,8 @@
 	src: url('OpenSans-Italic.ttf');
 }
 
+* { margin: 0; padding: 0; }
+
 #displayedVentureBlurb{
 	float: left;
 	min-height: 300px;
@@ -49,8 +51,6 @@
 #venturesContentArea p {
 	color: white;
 }
-
-* { margin: 0; padding: 0; }
 
 #events {
 	font-family: Open Sans Light;
@@ -120,11 +120,105 @@
 	opacity: 0.70;
 }
 
-#eventsSoon ul:after {
+#eventsSoon ul:after,
+#coworking ul:after {
 	content: '.';
 	visibility: hidden;
 	height: 0;
 	clear: both;
+}
+
+#coworking {
+	background: #003a5b;
+}
+
+#coworking h1 {
+	font-family: Open Sans Light;
+	font-size: 36pt;
+	color: white;
+	font-style: italic;
+	text-align: center;
+}
+
+#coworking li.option {
+	background: black;
+	color: white;
+	font-family: Open Sans Light;
+	width: 20%;
+	height: 100%;
+	margin: 0 25px;
+	float: left;
+}
+
+#coworking h2 {
+	background: white;
+	color: #555;
+	font-family: Open Sans Semibold;
+	font-size: 21pt;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 50px 0;
+}
+
+#coworking h3 {
+	font-size: 48pt;
+}
+
+#coworking h4 {
+	font-size: 24pt;
+	text-align: center;
+	color: #a1a1a1;
+}
+
+#coworking p {
+	color: #a1a1a1;
+	font-size: 9pt;
+	text-align: center;
+}
+
+#coworking li > ul {
+	border-top: 1px solid #a1a1a1;
+}
+
+#coworking li {
+	color: #a1a1a1;
+	text-align: center;
+	margin-top: 25px;
+}
+
+#coworking a {
+	display: block;
+	background: #29afce;
+	color: white;
+	line-height: 100px;
+	text-transform: uppercase;
+	font-size: 24pt;
+}
+
+#coworking .dropin {
+	margin-top: 50px;
+	background: white;
+}
+
+#coworking p.dropin {
+	clear: both;
+	font-family: Sanchez Regular;
+	color: black;
+	text-align: center;
+}
+
+#coworking .dropin label {
+	font-size: 24pt;
+	line-height: 100px;
+}
+
+#coworking .dropin button {
+	background: #29afce;
+	color: white;
+	float: right;
+	line-height: 100px;
+	height: inherit;
+	font-size: 24pt;
 }
 
 body {
@@ -217,6 +311,8 @@ section {
 	width: 100%;
 	padding-bottom: 110px;
 }
+
+a { text-decoration: none; }
 
 #hero {
 	width: 100%;
