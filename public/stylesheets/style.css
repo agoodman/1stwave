@@ -1,8 +1,34 @@
+@font-face {
+	font-family: Open Sans;
+	src: url('OpenSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: Open Sans Semibold;
+	src: url('OpenSans-Semibold.ttf');
+}
+
+@font-face {
+	font-family: Open Sans Light;
+	src: url('OpenSans-Light.ttf');
+}
+
+@font-face {
+	font-family: Sanchez Regular;
+	src: url('Sanchez-Regular.ttf');
+}
+
+@font-face {
+	font-family: Sanchez Italic;
+	src: url('OpenSans-Italic.ttf');
+}
+
 #displayedVentureBlurb{
 	float: left;
 	min-height: 300px;
 	margin-left: 20px;
-	display: block;
+	font-family: Open Sans Light;
+	max-width: 40%;
 }
 
 #ventureSlideshow{
@@ -11,10 +37,102 @@
 	height: 300px;
 }
 
+#venturesContentArea {
+	background: black;
+}
+
+#venturesContentArea h3 {
+	color: #dbe442;
+	text-transform: uppercase;
+}
+
+#venturesContentArea p {
+	color: white;
+}
+
 * { margin: 0; padding: 0; }
 
+#events {
+	font-family: Open Sans Light;
+	color: white;
+}
+
+#events h1 {
+	font-family: Open Sans Light;
+	color: #9ccb3b;	
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+#events h2 {
+	font-family: Sanchez Regular;
+	font-size: 25px;
+	padding: 50px;
+	background: #9ccb3b;
+}
+
+#events h3 {
+	text-transform: uppercase;
+}
+
+#events h4 {
+	font-family: Sanchez Regular;
+	font-size: 22pt;
+	margin: 20px;
+	border-bottom: 1px solid white;
+	padding-bottom: 25px;
+}
+
+#events p {
+	color: white;
+}
+
+#eventsComingUp p {
+	color: #111;
+}
+
+#futureEvents {
+	height: 100%;
+	background: #9ccb3b;
+	margin-left: 0;
+}
+
+#futureEvents li {
+	margin: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#eventsSoon {
+	background: #73aa00;
+}
+
+#eventsSoon li {
+	float: left;
+	width: 50%;
+}
+
+#eventsSoon ul {
+	padding: 50px;
+}
+
+#eventsSoon p {
+	opacity: 0.70;
+}
+
+#eventsSoon ul:after {
+	content: '.';
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Open Sans, sans-serif;
+}
+
+h1 {
+	font-family: Sanchez Regular;
 }
 
 .container {
@@ -34,6 +152,10 @@ hr {
 	clear: both;
 }
 
+ul { 
+	list-style: none;
+}
+
 header, section, footer { 
 	width: 100%;
 	display: block;
@@ -45,10 +167,6 @@ header {
 	height: 100px;
 	background: #ddd;
 	font-size: 25px;
-}
-
-header ul { 
-	list-style: none;
 }
 
 header nav {
@@ -143,9 +261,19 @@ section#welcome h1 {
 	color: #29afce;
 }
 
+#welcomeBlurb h1 {
+	font-family: Open Sans Light;
+}
+
 #welcomeIdealPeople {
 	background: #249ab6;
+	font-family: Sanchez Regular;
+	color: white;
 }
+
+#welcomeIdealPeople p { color: white; }
+
+#welcomeIdealPeople > * { margin: 20px; }
 
 #ventures {
 	background: url("../images/tampa_skyline.jpg") no-repeat;
