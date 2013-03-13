@@ -37,6 +37,15 @@
 	float: left;
 	width: 600px;
 	height: 300px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#ventureSlideshow div {
+	height: 600px;
+}
+
+#ventureSlideshow img {
+	margin:auto;
 }
 
 #venturesContentArea {
@@ -46,11 +55,15 @@
 #venturesContentArea h3 {
 	color: #dbe442;
 	text-transform: uppercase;
+	margin-top: 55px;
+	margin-bottom: 30px;
 }
 
 #venturesContentArea p {
 	color: white;
 }
+
+
 
 #events {
 	font-family: Open Sans Light;
@@ -138,16 +151,26 @@
 	color: white;
 	font-style: italic;
 	text-align: center;
+	margin: 60px auto 90px;
+	font-weight: 100;
 }
 
 #coworking li.option {
 	background: black;
 	color: white;
 	font-family: Open Sans Light;
-	width: 20%;
+	width: 23.0769231%;
 	height: 100%;
-	margin: 0 25px;
+	margin: 0 1.2820513%;
 	float: left;
+}
+
+#coworking li.option:first-child{
+	margin-left: 0;
+}
+
+#coworking li.option:last-child{
+	margin-right: 0;
 }
 
 #coworking h2 {
@@ -157,11 +180,18 @@
 	font-size: 21pt;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 50px 0;
+	padding: 50px;
+	min-height: 80px;
+}
+
+#coworking h2 + div {
+	height: 200px;
 }
 
 #coworking h3 {
+	margin-top:10px;
 	font-size: 48pt;
+	font-weight: 100;
 }
 
 #coworking h4 {
@@ -174,10 +204,12 @@
 	color: #a1a1a1;
 	font-size: 9pt;
 	text-align: center;
+	margin-top: 10px;
 }
 
 #coworking li > ul {
 	border-top: 1px solid #a1a1a1;
+	height: 220px;
 }
 
 #coworking li {
@@ -196,7 +228,6 @@
 }
 
 #coworking .dropin {
-	margin-top: 50px;
 	background: white;
 }
 
@@ -205,6 +236,7 @@
 	font-family: Sanchez Regular;
 	color: black;
 	text-align: center;
+	background: url('../images/open_icon.jpg') no-repeat 20px center white;
 }
 
 #coworking .dropin label {
@@ -219,6 +251,8 @@
 	line-height: 100px;
 	height: inherit;
 	font-size: 24pt;
+	padding: 0 50px;
+	font-family:Open Sans Light;
 }
 
 body {
@@ -350,11 +384,33 @@ button {
 	color: #ffffff;
 }
 
-section#welcome h1 {
+#welcome h1 {
 	font-size: 3.75em;
 	font-weight: 100;
 	text-transform: uppercase;
 	color: #29afce;
+}
+
+.right {
+	width: 31.6239316%;
+	display:block;
+	background: #249ab6;
+	float: left;
+	margin-left: 10%;
+	margin-top:-30px;
+}
+
+.right>*{
+	margin-left: 30px;
+}
+
+.left {
+	float: left;
+	width: 57.2649573%;
+}
+
+#welcome h2 {
+	margin-top: 0;
 }
 
 #welcomeBlurb h1 {
