@@ -3,7 +3,7 @@
 			width: 600,
 			height: 300,
 			play: {
-				active: false,
+				active: true,
 				interval: 6000,
 				effect: "fade",
 				auto:false
@@ -31,7 +31,14 @@
 			return false;
 		});
 		
+		$("#coworking a, #coworking button, #signUp").click(function() {
+			window.location.href = "http://tbwv.org/VQOlUj";
+			return false;
+		});
 		
+		$("#explore").click(function() {
+			$("html,body").animate({ scrollTop: $("#welcome").offset().top}, 250);
+		});
 		
 	});
 
