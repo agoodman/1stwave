@@ -70,6 +70,10 @@
 	color: white;
 }
 
+#events > .container > .row > * {
+	padding-top: 60px;
+}
+
 #events h1 {
 	font-family: Open Sans Light;
 	color: #9ccb3b;	
@@ -96,8 +100,8 @@
 	padding-bottom: 25px;
 }
 
-#events p {
-	color: white;
+#events h1 + p {
+	margin-bottom: 50px;
 }
 
 #eventsComingUp p {
@@ -111,9 +115,21 @@
 }
 
 #futureEvents li {
-	margin: 25px;
+	margin: 0 25px 25px 25px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+#futureEvents li:after {
+	content: '•';
+	font-size: 24pt;
+	margin-top: 20px;
+	line-height: 20px;
+	display: block;
+}
+
+#futureEvents li:last-child:after {
+	display: none;
 }
 
 #eventsSoon {
@@ -122,7 +138,9 @@
 
 #eventsSoon li {
 	float: left;
-	width: 50%;
+	width: 45%;
+	margin-right: 30px;
+	padding-bottom: 60px;
 }
 
 #eventsSoon ul {
@@ -131,6 +149,7 @@
 
 #eventsSoon p {
 	opacity: 0.70;
+	color: white;
 }
 
 #eventsSoon ul:after,
@@ -255,12 +274,12 @@
 	font-family:Open Sans Light;
 }
 
-body {
-	font-family: Open Sans, sans-serif;
+html, body {
+	min-width: 960px;
 }
 
-h1 {
-	font-family: Sanchez Regular;
+body {
+	font-family: Open Sans, sans-serif;
 }
 
 .container {
@@ -291,7 +310,6 @@ header, section, footer {
 
 header {
 	z-index: 999;
-	/*position: fixed;*/
 	height: 100px;
 	background: #ddd;
 	font-size: 25px;
@@ -340,13 +358,20 @@ header + section {
 }
 
 section {
-	padding-top: 30px;
 	clear: both;
 	width: 100%;
-	padding-bottom: 110px;
 }
 
 a { text-decoration: none; }
+
+footer {
+	padding-top: 60px;
+	background: black;
+	font-family: Sanchez Regular;
+	font-size: 12pt;
+	color: white;
+	text-align: center;
+}
 
 #hero {
 	width: 100%;
@@ -384,6 +409,14 @@ button {
 	color: #ffffff;
 }
 
+#welcome {
+	font-family: Open Sans Light;
+}
+
+#welcome > .container > .row > * {
+	padding-top: 60px;
+}
+
 #welcome h1 {
 	font-size: 3.75em;
 	font-weight: 100;
@@ -391,26 +424,38 @@ button {
 	color: #29afce;
 }
 
-.right {
-	width: 31.6239316%;
-	display:block;
-	background: #249ab6;
-	float: left;
-	margin-left: 10%;
-	margin-top:-30px;
-}
-
-.right>*{
-	margin-left: 30px;
-}
-
 .left {
 	float: left;
 	width: 57.2649573%;
 }
 
-#welcome h2 {
-	margin-top: 0;
+#welcome .side {
+	font-family: Sanchez Regular;
+	color: white;
+	background: #249ab6;
+}
+
+#welcome .side > * {
+	margin-left: 30px;
+}
+
+#welcome .side h2 {
+	font-size: 36pt;
+}
+
+#welcome .side p {
+	color: white;
+	font-family: Open Sans;
+}
+
+#welcome .side ul {
+	margin-bottom: 30px;
+}
+
+#welcome .side li {
+	margin-top: 25px;
+	font-size: 18pt;
+	text-transform: uppercase;
 }
 
 #welcomeBlurb h1 {
@@ -429,6 +474,11 @@ button {
 
 #ventures {
 	background: url("../images/tampa_skyline.jpg") no-repeat;
+}
+
+#ventures > .container > .row > * {
+	margin-top: 120px;
+	margin-bottom: 120px;
 }
 
 #venturesContentArea {
