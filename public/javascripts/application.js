@@ -6,7 +6,7 @@
 				active: true,
 				interval: 6000,
 				effect: "fade",
-				auto:false
+				auto: true
 			},
 			navigation : {
 				active: false
@@ -31,7 +31,7 @@
 			return false;
 		});
 		
-		$("#coworking a, #coworking button, #signUp").click(function() {
+		$("#coworking span, #coworking button, #signUp").click(function() {
 			window.location.href = "http://tbwv.org/VQOlUj";
 			return false;
 		});
