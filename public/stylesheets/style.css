@@ -28,7 +28,7 @@
 #displayedVentureBlurb{
 	float: left;
 	font-family: Open Sans Light;
-	width: 450px;
+	width: 470px;
 	background: black;
 	height: 235px;
 	padding-left: 20px;
@@ -101,30 +101,33 @@
 	color: #9ccb3b;	
 	text-transform: uppercase;
 	font-size: 50px;
+	margin-left: 0;
 }
 
 #events h2 {
 	font-family: Sanchez Regular;
 	font-size: 25px;
-	padding: 50px;
+	padding: 0 30px;
 	background: #9ccb3b;
+	margin-top: 20px;
 }
 
 #events h3 {
 	text-transform: uppercase;
+	font-family: Sanchez Regular;
 }
 
 #events h4 {
 	font-family: Open Sans Light;
-	font-size: 1.5em;
-	padding-bottom: 10px;
-	
+	font-size: 14pt;
+	text-transform: uppercase;
 }
 
 #events h5 {
 	text-transform: uppercase;
 	font-weight: 100;
 	color: rgba(255,255,255,.7);
+	margin: 0 0 30px 0;
 }
 
 #events h4 + h5 {
@@ -132,7 +135,7 @@
 }
 
 #events h1 + p {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 #eventsComingUp p {
@@ -142,6 +145,7 @@
 #events h5 + p {
 	color: rgba(255,255,255,.7);
 	font-weight: 100;
+	line-height: 1.5em;
 }
 
 #futureEvents {
@@ -264,7 +268,6 @@
 	color: #a1a1a1;
 	font-size: 9pt;
 	text-align: center;
-	margin-top: 10px;
 }
 
 #coworking li > ul {
@@ -279,13 +282,17 @@
 	margin-top: 25px;
 }
 
-#coworking a {
+#coworking span {
 	display: block;
 	background: #29afce;
 	color: white;
 	line-height: 100px;
 	text-transform: uppercase;
 	font-size: 24pt;
+}
+
+#coworking span {
+	cursor: pointer;
 }
 
 #coworking .dropin {
@@ -594,7 +601,7 @@ section#events {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 60%;
+  width: 62%;
   z-index: 0;
 }
 
@@ -605,7 +612,7 @@ section#events {
   position: absolute;
   left: 0px;
   top: 100px;
-  width: 60%;
+  width: 62%;
   z-index: 0;
 }
 
@@ -616,7 +623,7 @@ section#events {
   margin: 0;
   left: 0px;
   top: 260px;
-  width: 60%;
+  width: 62%;
   z-index: 0;
 }
 
@@ -653,10 +660,6 @@ section#events {
 .upcoming-header {
   height: 40px;
   padding-top: 10px;
-}
-
-#events h3 {
-	padding-top: 10px;
 }
 
 .events-list {

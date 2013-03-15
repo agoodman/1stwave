@@ -3,9 +3,9 @@
 			width: 600,
 			height: 300,
 			play: {
-				active: false,
-				interval: 8000,
-				effect: "slide",
+				active: true,
+				interval: 6000,
+				effect: "fade",
 				auto: true
 			},
 			navigation : {
@@ -30,7 +30,16 @@
 			 }, 250);
 			return false;
 		});
-
+		
+		$("#coworking span, #coworking button, #signUp").click(function() {
+			window.location.href = "http://tbwv.org/VQOlUj";
+			return false;
+		});
+		
+		$("#explore").click(function() {
+			$("html,body").animate({ scrollTop: $("#welcome").offset().top}, 250);
+		});
+		
 	});
 
 function changeVentureBlurb(number){

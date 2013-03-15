@@ -88,20 +88,24 @@
 						<h1>Some of the fine folks that call this place home...</h1>
 	
 						<div id="ventureSlideshow" style="display:none;">
-							<img id="logo1" src="images/venture_logos/drawer.png" alt="Drawer"/>
-							<img id="logo2" src="images/venture_logos/drawer.png" alt="Drawer"/>
-							<img id="logo3" src="images/venture_logos/drawer.png" alt="Drawer"/>
-							<img src="images/arrow_right.png" class="slidenav slidesjs-previous slidesjs-navigation" width="40" height="40" alt="Arrow Green Left"/>
-							<img src="images/arrow_left.png" class="slidenav slidesjs-next slidesjs-navigation" width="40" height="40" alt="Arrow Green Right"/>
+
+							<img id="logo1" src="images/venture_logos/drawer.jpg" alt="Drawer"/>
+							<img id="logo2" src="images/venture_logos/busplus.png" alt="Bus Plus" />
 						</div>
 	
 						<div id="displayedVentureBlurb">
+							<div id="blurb">
+							</div>
+							<!-- <div id="slideNav">
+								<img src="images/arrow-green-left.png" class="slidesjs-previous slidesjs-navigation" width="40" height="40" alt="Arrow Green Left">
+								<img src="images/arrow-green-right.png" class="slidesjs-next slidesjs-navigation" width="40" height="40" alt="Arrow Green Right">
+							</div> -->
 						</div>
 		
 						<ul id="ventureBlurbs" style="display:none;">
 							<li index="blurb1"><h3>Drawer</h3><p>Drawer helps you keep track of recommendations that come up in everyday conversation</p></li>
-							<li index="blurb2"><h3>Bus Plus</h3><p>On-demand local transportation that simplifies the user experience for taxi dispatch and payment</p></li>
-							<li index="blurb3"><h3>Brief Skate</h3><p>It's a briefcase. It's a skateboard. Stop! You're both right!</p></li>
+							<li index="blurb2"><h3>Bus Plus</h3><p>On-demand driving service that simplifies the user experience for taxi and shuttle dispatch</p></li>
+							<!-- <li index="blurb3"><h3>Brief Skate</h3><p>Carry your laptop safely and securely inside your skateboard</p></li> -->
 						</ul>
 					</div> <!--end #venturesContentArea -->
 		</section>
@@ -127,7 +131,7 @@
 		      <ul class="events">
 		        <li class="event-listing">
 		          <h4>Public Open House</h4>
-		          <h5>March 15th, Friday<h5>
+		          <h5>March 15th, Friday</h5>
 		          <h5>10AM - 4PM</h5>
 
 		          <p>The Venture Center is finally ready to open it's doors to the public & you're invited: Friday, March15th. There will be a ping-pong tournament, a year's worth of special pricing for event attendees, drawings, giveaways and MORE!</p>
@@ -143,9 +147,16 @@
 		    </div>
 		  </div>
 
-		   <div class="column2">
-		     <h1>We have so many things planned for 2013. Don't forget to check back for...</h1>
+		   <div id="futureEvents" class="column2">
+		     <h2>We have so many things planned for 2013. Don't forget to check back for...</h2>
 			 <hr />
+				<ul>
+					<li>Mayor's Hackathon</li>
+					<li>Cofounderslab Founder Wanted Meetup</li>
+					<li>Ekhos Conversation &amp; Cocktails</li>
+					<li>Startup Bus Pitch &amp; Pizza</li>
+					<li>Startup Weekend Meet &amp; Greet</li>
+				</ul>
 		   </div>
 		</div>
 	</section>
@@ -166,7 +177,7 @@
 						<li>Access Mon-Fri 9am-6pm</li>
 						<li>Introductory pricing</li>
 					</ul>
-					<a href="#">Apply</a>
+					<span>Apply</span>
 				</li>
 	
 				<li class="option">
@@ -182,7 +193,7 @@
 						<li>Reserved Desk</li>
 						<li>Introductory pricing</li>
 					</ul>
-					<a href="#">Apply</a>
+					<span>Apply</span>
 				</li>
 
 				<li class="option">
@@ -198,7 +209,7 @@
 						<li>Reserved Room</li>
 						<li>Access card for parking garage</li>
 					</ul>
-					<a href="#">Apply</a>
+					<span>Apply</span>
 				</li>
 	
 				<li class="option">
@@ -206,7 +217,7 @@
 					<div>
 						<h3>$299</h3>
 						<h4>monthly</h4>
-						<p>Some blurb here</p> 
+						<p>Reduce overhead &amp; operational costs</p> 
 					</div>
 					<ul>
 						<li>Basic shared amenities</li>
@@ -214,7 +225,7 @@
 						<li>Up to 4 employees per day</li>
 						<li>Special promotional opportunities</li>
 					</ul>
-					<a href="#">Apply</a>
+					<span>Apply</span>
 				</li>
 			</ul>
 			
@@ -225,7 +236,7 @@
 		</div>
 		</section>
 
-	<footer>
+	<footer id="footer">
 	&copy; Copyright 2013 Tampa Bay Wave. All Rights Reserved.
 	</footer>
 </div> <!--end #container -->
