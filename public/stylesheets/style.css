@@ -63,6 +63,14 @@
 	margin-right:20px;
 }
 
+#ventureSlideshow img.slidenav {
+	margin-top: 10px;
+}
+
+#ventureSlideshow img.slidenav:nth-child(2){
+	float: right;
+}
+
 #venturesContentArea {
 	background: black;
 }

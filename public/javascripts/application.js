@@ -4,9 +4,9 @@
 			height: 300,
 			play: {
 				active: false,
-				interval: 6000,
-				effect: "fade",
-				auto:false
+				interval: 8000,
+				effect: "slide",
+				auto: true
 			},
 			navigation : {
 				active: false
@@ -30,14 +30,9 @@
 			 }, 250);
 			return false;
 		});
-		
-		
-		
+
 	});
 
-
-
-
 function changeVentureBlurb(number){
-	$("#blurb").html($("[index='blurb"+number+"']").html());
+	$("#displayedVentureBlurb").html($("[index='blurb"+number+"']").html());
 }
