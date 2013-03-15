@@ -453,7 +453,7 @@ footer {
 
 #hero {
 	width: 100%;
-	background: url("http://placekitten.com/2000/600") no-repeat;
+	background: url('../images/hero_desk.jpg') no-repeat -500px center;
 	color: #ffffff;
 	height: 600px;
 }
