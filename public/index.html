@@ -6,35 +6,41 @@
 	<script src="javascripts/slidesjs/source/jquery.slides.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="javascripts/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8" src="javascripts/application.js"></script>
-	<link rel="stylesheet" href="lib/css/bootstrap-responsive.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="lib/css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   
 	
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	
+<header>
+<div id="social">
 	<div class="container">
-		<header>
-			<nav>
-				<h1 id="logo">FirstWave Venture Center</h1>
-				<ul>
-					<li><a href="#welcome">welcome</a></li>
-					<li><a href="#ventures">ventures</a></li>
-					<li><a href="#events">events</a></li>
-					<li><a href="#coworking">work with us</a></li>
-					<li><a href="#footer">find us</a></li>
-				</ul>
-				<hr/>
-			</nav>
-		</header>
+		<p>Get in touch with us at: <a href="mailto:info@tampabaywave.org">info@tampabaywave.org</a></p>
+		<p>Stay connected:</p>
 	</div>
+</div>
+	<div class="container">
+		<nav>
+			<h1 id="logo">FirstWave Venture Center</h1>
+			<ul>
+				<li><a href="#welcome">welcome</a></li>
+				<li><a href="#ventures">ventures</a></li>
+				<li><a href="#events">events</a></li>
+				<li><a href="#coworking">work with us</a></li>
+				<li><a href="#footer">find us</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
 
 		<section id="hero">
 			<div class="container">
 				<div class="row">
 					<div id="heroStatement" class="span6">
 						<h1>By Entrepreneurs, For Entrepreneurs</h1>
-						<h2>TampaBayWaVE is an 'by entrepreneur, for entrepreneur' non-profit that helps entrepreneurs turn ideas into growing tech ventures in Tampa Bay.</h2>
+						<h2>Tampa Bay's coolest open innovation center for building, launching and growing tech ventures.</h2>
 					</div>
 				</div>
 			
@@ -52,7 +58,11 @@
 					
 				<div class="span8">
 					<h1>What is FirstWave Venture Center?</h1>
-						<p>We are a 16,000 sq ft innovation center positioned in the heart of downtown Tampa. We help designers, developers, entrepreneurs, and tech startups communicate, collaborate, and build their ideas and businesses. Come visit us on the second floor of Rivergate Tower (Sykes building) for one of our many events or to cowork with the best and brightest community leaders. See you soon!</p>
+						<p>We are a 16,000 sq ft innovation center positioned in the heart of downtown Tampa. We help developers, entrepreneurs, designers, tech startups, business mentors and more communicate, collaborate, and innovate their ideas and businesses.</p>
+
+						<p>Operated by Tampa Bay WaVE - a nonprofit dedicated to helping entrepreneurs build, launch and grow thriving tech ventures in Tampa Bay - the FirstWaVE Venture Center is home to several tech startups as well as a whole host of other entrepreneurial support organizations too, like Florida Next, Startup Weekend Tampa, Startup Bus Southeast, and more.</p>
+
+						<p>Come visit us on the second floor of Rivergate Tower (aka, the "Sykes building") for one of our many events or to cowork with the best and brightest from our local tech community. See you soon!</p>
 				</div>
 				
 				<div class="side span4">
@@ -75,17 +85,21 @@
 
 		<section id="ventures">
 			<div class="container">
-				<div class="row">
-					<div id="venturesContentArea" class="span12">
 						<h1>Some of the fine folks that call this place home...</h1>
 	
 						<div id="ventureSlideshow" style="display:none;">
-							<img id="logo1" src="images/venture_logos/drawer.jpg" alt="Drawer"/>
-							<div id="logo2 busplus"></div>
-							<div id="logo3 busplus"></div>
+							<img id="logo1" src="images/venture_logos/drawer.png" alt="Drawer"/>
+							<img id="logo2" src="images/venture_logos/drawer.png" alt="Drawer"/>
+							<img id="logo3" src="images/venture_logos/drawer.png" alt="Drawer"/>
 						</div>
 	
 						<div id="displayedVentureBlurb">
+							<div id="blurb">
+							</div>
+							<div id="slideNav">
+								<img src="images/arrow-green-left.png" class="slidesjs-previous slidesjs-navigation" width="40" height="40" alt="Arrow Green Left">
+								<img src="images/arrow-green-right.png" class="slidesjs-next slidesjs-navigation" width="40" height="40" alt="Arrow Green Right">
+							</div>
 						</div>
 		
 						<ul id="ventureBlurbs" style="display:none;">
@@ -94,52 +108,51 @@
 							<li index="blurb3"><h3>Brief Skate</h3><p>It's a briefcase. It's a skateboard. Stop! You're both right!</p></li>
 						</ul>
 					</div> <!--end #venturesContentArea -->
-				</div>
-			</div>
 		</section>
 
 		<section id="events">
-			<div class="container">
-				<div class="row">
-					<div class="span8" id="eventsComingUp">
-						<h1>Events That Rock</h1>
-						<p>Join us at one of the upcoming events designed to educate, connect, and inspire local tech entrepreneurs, developers, designers, innovators, and more. </p>
-						<h2>Upcoming Events:</h2>
-						<div id="eventsSoon">
-							<ul>
-								<li>
-									<h3>Public Open House</h3>
-									<p>March 15th, Friday</p>
-									<p>10AM - 4PM</p>
-									<p>The Venture Center is finally ready to open it's doors to the public & you're invited: Friday, March15th. There will be a ping-pong tournament, a year's worth of special pricing for event attendees, drawings, giveaways and MORE!</p>
-								</li>
-								<li>
-									<h3>TIE Event on Mobility</h3>
-									<p>March 22nd, Friday</p>
-									<p>5PM - 9PM</p>
-									<p>Opportunities in a world going mobile! Whether you are a mobile consumer, medical professional or mobile application developer this panel discussion on 'Opportunities in the Mobile Marketplace' will capture your imagination and inspire you to scale to new heights.</p>
-								</li>
-							</ul>
-							<hr/>
-						</div>
-					</div><!--end #eventsComingUp-->
-	
-					<div class="span4" id="futureEvents">
-						<h4>But wait, there's more...</h4>
-						<hr/>
-						<ul>
-							<li>Mayor's Hackathon</li>
-							<li>Cofounderslab Founder Wanted Meetup</li>
-							<li>Ekhos Conversation &amp; Cocktails</li>
-							<li>Startup Bus Pitch &amp; Pizza</li>
-							<li>Startup Weekend Meet &amp; Greet</li>
-						</ul>
-					</div>
-					
-					<hr/>
-				</div>
-			</div>
-		</section>
+		  <div class="white"></div>
+		  <div class="dark-green"></div>
+
+		  <div class="container">
+		  <div class="column1">
+
+		    <div class="callout">
+		      	<h1>Events That Rock</h1>
+				<p>Join us at one of the upcoming events designed to educate, connect, and inspire local tech entrepreneurs, developers, designers, innovators, and more. </p>
+		    </div>
+
+		    <div class="upcoming-header">
+		      <h3>Upcoming Events:</h3>
+		    </div>
+
+		    <div class="events-list">
+
+		      <ul class="events">
+		        <li class="event-listing">
+		          <h4>Public Open House</h4>
+		          <h5>March 15th, Friday<h5>
+		          <h5>10AM - 4PM</h5>
+
+		          <p>The Venture Center is finally ready to open it's doors to the public & you're invited: Friday, March15th. There will be a ping-pong tournament, a year's worth of special pricing for event attendees, drawings, giveaways and MORE!</p>
+		        </li>
+		        <li class="event-listing">
+		          <h4>TIE Event on Mobility</h4>
+		          <h5>March 22nd, Friday</h5>
+		          <h5>5PM - 9PM</h5>
+
+		          <p>Opportunities in a world going mobile! Whether you are a mobile consumer, medical professional or mobile application developer this panel discussion on 'Opportunities in the Mobile Marketplace' will capture your imagination and inspire you to scale to new heights.</p>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+
+		   <div class="column2">
+		     <h1>We have so many things planned for 2013. Don't forget to check back for...</h1>
+			 <hr />
+		   </div>
+		</div>
+	</section>
 
 		<section id="coworking">
 			<div class="container">
@@ -158,7 +171,6 @@
 						<li>Introductory pricing</li>
 					</ul>
 					<a href="#">Apply</a>
-					<hr/>
 				</li>
 	
 				<li class="option">
@@ -175,7 +187,6 @@
 						<li>Introductory pricing</li>
 					</ul>
 					<a href="#">Apply</a>
-					<hr/>
 				</li>
 
 				<li class="option">
@@ -192,7 +203,6 @@
 						<li>Access card for parking garage</li>
 					</ul>
 					<a href="#">Apply</a>
-					<hr/>
 				</li>
 	
 				<li class="option">
@@ -205,11 +215,10 @@
 					<ul>
 						<li>Basic shared amenities</li>
 						<li>24hr Access</li>
-						<li>Reserved Room</li>
-						<li>Access card for parking garage</li>
+						<li>Up to 4 employees per day</li>
+						<li>Special promotional opportunities</li>
 					</ul>
 					<a href="#">Apply</a>
-					<hr/>
 				</li>
 			</ul>
 			

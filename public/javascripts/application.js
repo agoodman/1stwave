@@ -9,10 +9,10 @@
 				auto:false
 			},
 			navigation : {
-				active: true
+				active: false
 			},
 			pagination: {
-				active: true
+				active: false
 			},
 			callback: {
 				complete: function(number){
@@ -39,5 +39,5 @@
 
 
 function changeVentureBlurb(number){
-	$("#displayedVentureBlurb").html($("[index='blurb"+number+"']").html());
+	$("#blurb").html($("[index='blurb"+number+"']").html());
 }

@@ -27,17 +27,21 @@
 
 #displayedVentureBlurb{
 	float: left;
-	min-height: 300px;
-	margin-left: 20px;
 	font-family: Open Sans Light;
-	max-width: 40%;
+	width: 450px;
+	background: black;
+	height: 235px;
+	padding-left: 20px;
+}
+
+#blurb {
+	height: 190px;
 }
 
 #ventureSlideshow{
 	float: left;
-	width: 600px;
+	width: 470px;
 	height: 300px;
-	background-color: rgba(255,255,255,0.5);
 }
 
 #ventureSlideshow div {
@@ -48,22 +52,32 @@
 	margin:auto;
 }
 
+#slideNav {
+	position: relative;
+	margin-top: 30px;
+	bottom: 70px;
+	}
+
+#slideNav img:nth-child(2) {
+	float:right;
+	margin-right:20px;
+}
+
 #venturesContentArea {
 	background: black;
 }
 
-#venturesContentArea h3 {
+#displayedVentureBlurb h3 {
 	color: #dbe442;
 	text-transform: uppercase;
-	margin-top: 55px;
-	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
-#venturesContentArea p {
+#displayedVentureBlurb p {
 	color: white;
+	margin-right: 30px;
 }
-
-
 
 #events {
 	font-family: Open Sans Light;
@@ -74,7 +88,7 @@
 	padding-top: 60px;
 }
 
-#events h1 {
+#events h1:first-of-type {
 	font-family: Open Sans Light;
 	color: #9ccb3b;	
 	text-transform: uppercase;
@@ -93,11 +107,20 @@
 }
 
 #events h4 {
-	font-family: Sanchez Regular;
-	font-size: 22pt;
-	margin: 20px;
-	border-bottom: 1px solid white;
-	padding-bottom: 25px;
+	font-family: Open Sans Light;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+	
+}
+
+#events h5 {
+	text-transform: uppercase;
+	font-weight: 100;
+	color: rgba(255,255,255,.7);
+}
+
+#events h4 + h5 {
+	margin-bottom: 0;
 }
 
 #events h1 + p {
@@ -106,6 +129,11 @@
 
 #eventsComingUp p {
 	color: #111;
+}
+
+#events h5 + p {
+	color: rgba(255,255,255,.7);
+	font-weight: 100;
 }
 
 #futureEvents {
@@ -174,12 +202,15 @@
 	font-weight: 100;
 }
 
+#coworking ul {
+	margin-left: 0;
+}
+
 #coworking li.option {
 	background: black;
 	color: white;
 	font-family: Open Sans Light;
 	width: 23.0769231%;
-	height: 100%;
 	margin: 0 1.2820513%;
 	float: left;
 }
@@ -196,20 +227,22 @@
 	background: white;
 	color: #555;
 	font-family: Open Sans Semibold;
-	font-size: 21pt;
+	font-size: 1.4em;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 50px;
+	padding: 40px 20px 40px;
 	min-height: 80px;
+	line-height: 1.4em;
+	margin-top: 0px;
 }
 
 #coworking h2 + div {
-	height: 200px;
+	height: 150px;
 }
 
 #coworking h3 {
 	margin-top:10px;
-	font-size: 48pt;
+	font-size: 3em;
 	font-weight: 100;
 }
 
@@ -229,6 +262,7 @@
 #coworking li > ul {
 	border-top: 1px solid #a1a1a1;
 	height: 220px;
+	margin-left:0px;
 }
 
 #coworking li {
@@ -255,12 +289,15 @@
 	font-family: Sanchez Regular;
 	color: black;
 	text-align: center;
-	background: url('../images/open_icon.jpg') no-repeat 20px center white;
 }
 
 #coworking .dropin label {
 	font-size: 24pt;
 	line-height: 100px;
+	width:60%;
+	float:left;
+	background: url('../images/open_icon.jpg') no-repeat 10px center #ffffff;
+	padding-left: 5%;
 }
 
 #coworking .dropin button {
@@ -268,10 +305,12 @@
 	color: white;
 	float: right;
 	line-height: 100px;
-	height: inherit;
-	font-size: 24pt;
-	padding: 0 50px;
+	height: 100px;
+	font-size: 1.75em;
+	padding: 0 30px;
 	font-family:Open Sans Light;
+	width: 35%;
+	display: inline;
 }
 
 html, body {
@@ -311,7 +350,6 @@ header, section, footer {
 header {
 	z-index: 999;
 	height: 100px;
-	background: #ddd;
 	font-size: 25px;
 }
 
@@ -327,10 +365,13 @@ header nav {
 	width: 212px;
 	float: left;
 	margin-top: 30px;
+	height: 60px;
 }
 
 header nav ul {
 	float: right;
+	height: 20px;
+	margin-top: 35px;
 }
 
 header nav li {
@@ -354,7 +395,29 @@ header nav ul:after {
 }
 
 header + section {
-	padding-top: 50px;
+}
+
+#social {
+	background: black;
+	height: 30px;
+	padding: 5px 0px 0px 20px;
+}
+
+#social p {
+	font-size: .5em;
+	color: #ffffff;
+	width: 300px;
+	float: right;	
+}
+
+#social p:nth-child(1){
+	float: left;
+}
+
+#social img {
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
 }
 
 section {
@@ -377,7 +440,7 @@ footer {
 	width: 100%;
 	background: url("http://placekitten.com/2000/600") no-repeat;
 	color: #ffffff;
-	padding-bottom: 60px;
+	height: 600px;
 }
 
 #heroStatement {
@@ -402,6 +465,7 @@ button {
 	text-transform: uppercase;
 	border: none;
 	background-color: #ffffff;
+	margin-bottom: 30px;
 }
 
 .signUp {
@@ -422,6 +486,7 @@ button {
 	font-weight: 100;
 	text-transform: uppercase;
 	color: #29afce;
+	line-height: 60px;
 }
 
 .left {
@@ -436,7 +501,7 @@ button {
 }
 
 #welcome .side > * {
-	margin-left: 30px;
+	margin: 0px 30px;
 }
 
 #welcome .side h2 {
@@ -446,6 +511,7 @@ button {
 #welcome .side p {
 	color: white;
 	font-family: Open Sans;
+	font-size: 1.1em;
 }
 
 #welcome .side ul {
@@ -454,8 +520,11 @@ button {
 
 #welcome .side li {
 	margin-top: 25px;
-	font-size: 18pt;
+	font-size: 1.25em;
 	text-transform: uppercase;
+	line-height: 26px;
+	font-weight: 100;
+	text-align: center;
 }
 
 #welcomeBlurb h1 {
@@ -476,20 +545,124 @@ button {
 	background: url("../images/tampa_skyline.jpg") no-repeat;
 }
 
-#ventures > .container > .row > * {
-	margin-top: 120px;
-	margin-bottom: 120px;
+#ventures {
+	padding-bottom: 120px;
 }
 
 #venturesContentArea {
 	margin-left: 0;
 }
 
-#venturesContentArea h1 {
-	height: 204px;
+#ventures h1 {
+	max-width: 100%;
 	background-color: rgba(219, 228, 66, .7);
 	text-align: center;
 	font-size: 3.75em;
 	font-style: italic;
 	font-weight: 100;
+	margin:60px 0 0 0;
+	line-height: 70px;
+	padding: 30px;
+}
+
+
+/*test*/
+
+section#events {
+  background-color: #a1c935; 
+  position: relative;
+  width: 100%;
+  min-height: 660px;
+}
+
+#events ul {
+	margin: 0;
+}
+
+.white {
+  background-color: #fff;
+  height: 200px;
+  margin: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 60%;
+  z-index: 0;
+}
+
+.green {
+  background-color: #a1c935;
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  width: 60%;
+  z-index: 0;
+}
+
+.dark-green {
+  background-color: #78a900;
+  height: 400px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  top: 260px;
+  width: 60%;
+  z-index: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  position: relative;
+}
+
+.column1 {
+  float: left;
+  width: 65%;
+}
+
+.column2 {
+  float: left;
+  width: 35%;
+  text-align: center;
+}
+
+#events h1{
+	font-family: "Sanchez Regular";
+	font-size: 1.875em;
+	color: #fff;
+	font-weight: 100;
+	text-transform: none;
+	margin:20px 40px;
+}
+
+.callout {
+  padding-top: 10px;
+}
+
+.upcoming-header {
+  height: 40px;
+  padding-top: 10px;
+}
+
+#events h3 {
+	padding-top: 10px;
+}
+
+.events-list {
+  height: 100px;
+  padding-top: 40px;
+}
+
+.events {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-listing {
+  float: left;
+  margin-right: 40px;
+  width: 240px;
 }
