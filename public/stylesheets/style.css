@@ -328,6 +328,8 @@
 	display: inline;
 }
 
+
+
 html, body {
 	min-width: 960px;
 }
@@ -445,10 +447,74 @@ a { text-decoration: none; }
 footer {
 	padding-top: 60px;
 	background: black;
-	font-family: Sanchez Regular;
-	font-size: 12pt;
+	font-family: Open Sans;
+	font-size: 1.25em;
 	color: white;
-	text-align: center;
+}
+
+footer h1 {
+	font-size: 1.875em;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+footer h2 {
+	font-size: 1em;
+	font-weight: 100;
+	line-height: 1.5em;
+	padding-bottom: 20px;
+}
+	
+footer>div>div {
+	width: 31%;
+	float: left;
+	margin-left: 5%;
+}
+
+footer>div>div:first-child{
+	width: 23%;
+	margin-left: 0px;
+}
+
+footer button{
+	font-size: .8em;
+	width: 100%;
+	padding: 10px;
+	background: #252525;
+	height: 83px;
+	color: #fff;
+	font-size: 1.25em;
+}
+
+address {
+	border-top: 2px solid #b7b7b7;
+	padding: 35px 0px 0px 50px;
+	background: url('../images/locationIcon.png') no-repeat left center;
+	height: 70px;
+}
+
+
+
+footer p {
+	font-size: .8em;
+	color: #3c3c3c;
+	clear:both;
+	text-transform: uppercase;
+	font-weight: 600;	
+}
+
+address p {
+	font-size: .9em;
+	line-height: 1em;
+	color: #fff;
+	font-weight: 100;
+}
+
+
+#map {
+	width: 36%;
+	height: 271px;
 }
 
 #hero {
@@ -579,9 +645,6 @@ button {
 	line-height: 70px;
 	padding: 30px;
 }
-
-
-/*test*/
 
 section#events {
   background-color: #a1c935; 
