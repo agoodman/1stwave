@@ -36,6 +36,11 @@
 			return false;
 		});
 		
+		$("#newsletter").click(function() {
+			window.location.href = "http://eepurl.com/v8-ov";
+			return false;
+		});
+		
 		$("#explore").click(function() {
 			$("html,body").animate({ scrollTop: $("#welcome").offset().top}, 250);
 		});
@@ -44,7 +49,9 @@
 		var e = {
 			zoom: 16,
 			center: new google.maps.LatLng(27.947339, -82.460533),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			draggable: false,
+			disableDoubleClickZoom: true
 		};
 		
 		var map=new google.maps.Map(document.getElementById("map"),e);
