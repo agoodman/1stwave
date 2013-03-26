@@ -519,7 +519,7 @@ address p {
 
 #hero {
 	width: 100%;
-	background: url('../images/hero_desk.jpg') no-repeat -500px center;
+	background: url('../images/firstwave.jpg') no-repeat -200px center;
 	color: #ffffff;
 	height: 600px;
 }
