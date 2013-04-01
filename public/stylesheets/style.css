@@ -417,14 +417,37 @@ header + section {
 #social {
 	background: black;
 	height: 30px;
-	padding: 5px 0px 0px 20px;
+	padding-top: 5px;
 }
 
 #social p {
 	font-size: .5em;
-	color: #ffffff;
 	width: 300px;
-	float: right;	
+	color: white;
+	float: left;	
+}
+
+#social ul {
+	color: white;
+	float: right;
+}
+
+#social li {
+	float: left;
+	font-size: 0.5em;
+	margin-left: 25px;
+}
+
+#social li:first-child {
+	margin-left: 0;
+}
+
+#social ul:after {
+	content: '.';
+	visibility: hidden;
+	height: 0;
+	clear: both;
+	display: block;
 }
 
 #social p:nth-child(1){
