@@ -1,683 +1,695 @@
+/**
+ * First Wave Venture Center
+ * File: style.css
+ *
+ * Modified by Ken@GyroscopeStudios.com
+ * May 2, 2013
+ */
+
 @font-face {
-	font-family: Open Sans;
-	src: url('OpenSans-Regular.ttf');
+  font-family: Open Sans;
+  src: url('OpenSans-Regular.ttf');
 }
 
 @font-face {
-	font-family: Open Sans Semibold;
-	src: url('OpenSans-Semibold.ttf');
+  font-family: Open Sans Semibold;
+  src: url('OpenSans-Semibold.ttf');
 }
 
 @font-face {
-	font-family: Open Sans Light;
-	src: url('OpenSans-Light.ttf');
+  font-family: Open Sans Light;
+  src: url('OpenSans-Light.ttf');
 }
 
 @font-face {
-	font-family: Sanchez Regular;
-	src: url('Sanchez-Regular.ttf');
+  font-family: Sanchez Regular;
+  src: url('Sanchez-Regular.ttf');
 }
 
 @font-face {
-	font-family: Sanchez Italic;
-	src: url('OpenSans-Italic.ttf');
+  font-family: Sanchez Italic;
+  src: url('OpenSans-Italic.ttf');
 }
 
-* { margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-#displayedVentureBlurb{
-	float: left;
-	font-family: Open Sans Light;
-	width: 470px;
-	background: black;
-	height: 235px;
-	padding-left: 20px;
+#displayedVentureBlurb {
+  float: left;
+  font-family: Open Sans Light;
+  width: 470px;
+  background: black;
+  height: 235px;
+  padding-left: 20px;
 }
 
 #blurb {
-	height: 190px;
+  height: 190px;
 }
 
-#ventureSlideshow{
-	float: left;
-	width: 470px;
-	height: 300px;
+#ventureSlideshow {
+  float: left;
+  width: 470px;
+  height: 300px;
 }
 
 #ventureSlideshow div {
-	height: 600px;
+  height: 600px;
 }
 
 #ventureSlideshow img {
-	margin:auto;
+  margin: auto;
 }
 
 #slideNav {
-	position: relative;
-	margin-top: 30px;
-	bottom: 70px;
-	}
+  position: relative;
+  margin-top: 30px;
+  bottom: 70px;
+}
 
 #slideNav img:nth-child(2) {
-	float:right;
-	margin-right:20px;
+  float: right;
+  margin-right: 20px;
 }
 
 #ventureSlideshow img.slidenav {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
-#ventureSlideshow img.slidenav:nth-child(2){
-	float: right;
+#ventureSlideshow img.slidenav:nth-child(2) {
+  float: right;
 }
 
 #venturesContentArea {
-	background: black;
+  background: black;
 }
 
 #displayedVentureBlurb h3 {
-	color: #dbe442;
-	text-transform: uppercase;
-	margin-top: 30px;
-	margin-bottom: 10px;
+  color: #dbe442;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 #displayedVentureBlurb p {
-	color: white;
-	margin-right: 30px;
+  color: white;
+  margin-right: 30px;
 }
 
 #events {
-	font-family: Open Sans Light;
-	color: white;
+  font-family: Open Sans Light;
+  color: white;
 }
 
 #events > .container > .row > * {
-	padding-top: 60px;
+  padding-top: 60px;
 }
 
 #events h1:first-of-type {
-	font-family: Open Sans Light;
-	color: #9ccb3b;	
-	text-transform: uppercase;
-	font-size: 50px;
-	margin-left: 0;
+  font-family: Open Sans Light;
+  color: #9ccb3b;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-left: 0;
 }
 
 #events h2 {
-	font-family: Sanchez Regular;
-	font-size: 25px;
-	padding: 0 30px;
-	background: #9ccb3b;
-	margin-top: 20px;
+  font-family: Sanchez Regular;
+  font-size: 25px;
+  padding: 0 30px;
+  background: #9ccb3b;
+  margin-top: 20px;
 }
 
 #events h3 {
-	text-transform: uppercase;
-	font-family: Sanchez Regular;
+  text-transform: uppercase;
+  font-family: Sanchez Regular;
 }
 
 #events h4 {
-	font-family: Open Sans Light;
-	font-size: 14pt;
-	text-transform: uppercase;
+  font-family: Open Sans Light;
+  font-size: 14pt;
+  text-transform: uppercase;
 }
 
 #events h5 {
-	text-transform: uppercase;
-	font-weight: 100;
-	color: rgba(255,255,255,.7);
-	margin: 0 0 30px 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: rgba(255, 255, 255, .7);
+  margin: 0 0 30px 0;
 }
 
 #events h4 + h5 {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #events h1 + p {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #eventsComingUp p {
-	color: #111;
+  color: #111;
 }
 
 #events h5 + p {
-	color: rgba(255,255,255,.7);
-	font-weight: 100;
-	line-height: 1.5em;
+  color: rgba(255, 255, 255, .7);
+  font-weight: 100;
+  line-height: 1.5em;
 }
 
 #futureEvents {
-	height: 100%;
-	background: #9ccb3b;
-	margin-left: 0;
+  height: 100%;
+  background: #9ccb3b;
+  margin-left: 0;
 }
 
 #futureEvents li {
-	margin: 0 25px 25px 25px;
-	text-align: center;
-	text-transform: uppercase;
+  margin: 0 25px 25px 25px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #futureEvents li:after {
-	content: '•';
-	font-size: 24pt;
-	margin-top: 20px;
-	line-height: 20px;
-	display: block;
+  content: '•';
+  font-size: 24pt;
+  margin-top: 20px;
+  line-height: 20px;
+  display: block;
 }
 
 #futureEvents li:last-child:after {
-	display: none;
+  display: none;
 }
 
 #eventsSoon {
-	background: #73aa00;
+  background: #73aa00;
 }
 
 #eventsSoon li {
-	float: left;
-	width: 45%;
-	margin-right: 30px;
-	padding-bottom: 60px;
+  float: left;
+  width: 45%;
+  margin-right: 30px;
+  padding-bottom: 60px;
 }
 
 #eventsSoon ul {
-	padding: 50px;
+  padding: 50px;
 }
 
 #eventsSoon p {
-	opacity: 0.70;
-	color: white;
+  opacity: 0.70;
+  color: white;
 }
 
 #eventsSoon ul:after,
 #coworking ul:after {
-	content: '.';
-	visibility: hidden;
-	height: 0;
-	clear: both;
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  clear: both;
 }
 
 #coworking {
-	background: #003a5b;
+  background: #003a5b;
 }
 
 #coworking h1 {
-	font-family: Open Sans Light;
-	font-size: 36pt;
-	color: white;
-	font-style: italic;
-	text-align: center;
-	margin: 60px auto 90px;
-	font-weight: 100;
+  font-family: Open Sans Light;
+  font-size: 36pt;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin: 60px auto 90px;
+  font-weight: 100;
 }
 
 #coworking ul {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 #coworking li.option {
-	background: black;
-	color: white;
-	font-family: Open Sans Light;
-	width: 23.0769231%;
-	margin: 0 1.2820513%;
-	float: left;
+  background: black;
+  color: white;
+  font-family: Open Sans Light;
+  width: 23.0769231%;
+  margin: 0 1.2820513%;
+  float: left;
 }
 
-#coworking li.option:first-child{
-	margin-left: 0;
+#coworking li.option:first-child {
+  margin-left: 0;
 }
 
-#coworking li.option:last-child{
-	margin-right: 0;
+#coworking li.option:last-child {
+  margin-right: 0;
 }
 
 #coworking h2 {
-	background: white;
-	color: #555;
-	font-family: Open Sans Semibold;
-	font-size: 1.4em;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 40px 20px 40px;
-	min-height: 80px;
-	line-height: 1.4em;
-	margin-top: 0px;
+  background: white;
+  color: #555;
+  font-family: Open Sans Semibold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 20px 40px;
+  min-height: 80px;
+  line-height: 1.4em;
+  margin-top: 0px;
 }
 
 #coworking h2 + div {
-	height: 150px;
+  height: 150px;
 }
 
 #coworking h3 {
-	margin-top:10px;
-	font-size: 3em;
-	font-weight: 100;
+  margin-top: 10px;
+  font-size: 3em;
+  font-weight: 100;
 }
 
 #coworking h4 {
-	font-size: 24pt;
-	text-align: center;
-	color: #a1a1a1;
+  font-size: 24pt;
+  text-align: center;
+  color: #a1a1a1;
 }
 
 #coworking p {
-	color: #a1a1a1;
-	font-size: 9pt;
-	text-align: center;
+  color: #a1a1a1;
+  font-size: 9pt;
+  text-align: center;
 }
 
 #coworking li > ul {
-	border-top: 1px solid #a1a1a1;
-	height: 220px;
-	margin-left:0px;
+  border-top: 1px solid #a1a1a1;
+  height: 220px;
+  margin-left: 0px;
 }
 
 #coworking li {
-	color: #a1a1a1;
-	text-align: center;
-	margin-top: 25px;
+  color: #a1a1a1;
+  text-align: center;
+  margin-top: 25px;
 }
 
 #coworking span {
-	display: block;
-	background: #29afce;
-	color: white;
-	line-height: 100px;
-	text-transform: uppercase;
-	font-size: 24pt;
+  display: block;
+  background: #29afce;
+  color: white;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-size: 24pt;
 }
 
 #coworking span {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 #coworking .dropin {
-	background: white;
+  background: white;
 }
 
 #coworking p.dropin {
-	clear: both;
-	font-family: Sanchez Regular;
-	color: black;
-	text-align: center;
+  clear: both;
+  font-family: Sanchez Regular;
+  color: black;
+  text-align: center;
 }
 
 #coworking .dropin label {
-	font-size: 24pt;
-	line-height: 100px;
-	width:60%;
-	float:left;
-	background: url('../images/open_icon.jpg') no-repeat 10px center #ffffff;
-	padding-left: 5%;
+  font-size: 24pt;
+  line-height: 100px;
+  width: 60%;
+  float: left;
+  background: url('../images/open_icon.jpg') no-repeat 10px center #ffffff;
+  padding-left: 5%;
 }
 
 #coworking .dropin button {
-	background: #29afce;
-	color: white;
-	float: right;
-	line-height: 100px;
-	height: 100px;
-	font-size: 1.75em;
-	padding: 0 30px;
-	font-family:Open Sans Light;
-	width: 35%;
-	display: inline;
+  background: #29afce;
+  color: white;
+  float: right;
+  line-height: 100px;
+  height: 100px;
+  font-size: 1.75em;
+  padding: 0 30px;
+  font-family: Open Sans Light;
+  width: 35%;
+  display: inline;
 }
-
 
 
 html, body {
-	min-width: 960px;
+  min-width: 960px;
 }
 
 body {
-	font-family: Open Sans, sans-serif;
+  font-family: Open Sans, sans-serif;
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
-	font-size: 1.25em;
-	font-weight: 200;
-	color: #111111;
+  font-size: 1.25em;
+  font-weight: 200;
+  color: #111111;
 }
 
 hr {
-	visibility: hidden;
-	height: 0;
-	clear: both;
+  visibility: hidden;
+  height: 0;
+  clear: both;
 }
 
-ul { 
-	list-style: none;
+ul {
+  list-style: none;
 }
 
-header, section, footer { 
-	width: 100%;
-	display: block;
+header, section, footer {
+  width: 100%;
+  display: block;
 }
 
 header {
-	z-index: 999;
-	height: 100px;
-	font-size: 25px;
+  z-index: 999;
+  height: 100px;
+  font-size: 25px;
 }
 
 header nav {
-	width: 100%;
-	background-color: #ffffff;
-	line-height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  line-height: 100px;
 }
 
 #logo {
-	background: url("../images/firstWaveLogo_tmp.jpg") no-repeat;
-	text-indent: -9999px;
-	width: 212px;
-	float: left;
-	margin-top: 30px;
-	height: 60px;
+  background: url("../images/firstWaveLogo.jpg") no-repeat;
+  text-indent: -9999px;
+  width: 212px;
+  float: left;
+  margin-top: 30px;
+  height: 60px;
 }
 
 header nav ul {
-	float: right;
-	height: 20px;
-	margin-top: 35px;
+  float: right;
+  height: 20px;
+  margin-top: 35px;
 }
 
 header nav li {
-	float: left;
-	margin-left: 25px;
-	
+  float: left;
+  margin-left: 25px;
+
 }
 
 header nav a {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: .6em;
-	color: #b7b7b7 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .6em;
+  color: #b7b7b7 !important;
 }
 
 header nav ul:after {
-	content: '.';
-	visibility: hidden;
-	height: 0;
-	clear: both;
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  clear: both;
 }
 
 header + section {
 }
 
 #social {
-	background: black;
-	height: 30px;
-	padding-top: 5px;
+  background: black;
+  height: 30px;
+  padding-top: 5px;
 }
 
 #social p {
-	font-size: .5em;
-	width: 300px;
-	color: white;
-	float: left;	
+  font-size: .5em;
+  width: 300px;
+  color: white;
+  float: left;
 }
 
 #social ul {
-	color: white;
-	float: right;
+  color: white;
+  float: right;
 }
 
 #social li {
-	float: left;
-	font-size: 0.5em;
-	margin-left: 25px;
+  float: left;
+  font-size: 0.5em;
+  margin-left: 25px;
 }
 
 #social li:first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 #social ul:after {
-	content: '.';
-	visibility: hidden;
-	height: 0;
-	clear: both;
-	display: block;
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  display: block;
 }
 
-#social p:nth-child(1){
-	float: left;
+#social p:nth-child(1) {
+  float: left;
 }
 
 #social img {
-	float: right;
-	margin-right: 5px;
-	margin-top: 5px;
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 section {
-	clear: both;
-	width: 100%;
+  clear: both;
+  width: 100%;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 footer {
-	padding-top: 60px;
-	background: black;
-	font-family: Open Sans;
-	font-size: 1.25em;
-	color: white;
+  padding-top: 60px;
+  background: black;
+  font-family: Open Sans;
+  font-size: 1.25em;
+  color: white;
 }
 
 footer h1 {
-	font-size: 1.875em;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 100;
+  font-size: 1.875em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 footer h2 {
-	font-size: 1em;
-	font-weight: 100;
-	line-height: 1.5em;
-	padding-bottom: 20px;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.5em;
+  padding-bottom: 20px;
 }
-	
+
 footer>div>div {
-	width: 31%;
-	float: left;
-	margin-left: 5%;
+  width: 31%;
+  float: left;
+  margin-left: 5%;
 }
 
-footer>div>div:first-child{
-	width: 23%;
-	margin-left: 0px;
+footer>div>div:first-child {
+  width: 23%;
+  margin-left: 0px;
 }
 
-footer button{
-	font-size: .8em;
-	width: 100%;
-	padding: 10px;
-	background: #252525;
-	height: 83px;
-	color: #fff;
-	font-size: 1.25em;
+footer button {
+  font-size: .8em;
+  width: 100%;
+  padding: 10px;
+  background: #252525;
+  height: 83px;
+  color: #fff;
+  font-size: 1.25em;
 }
 
 address {
-	border-top: 2px solid #b7b7b7;
-	padding: 35px 0px 0px 50px;
-	background: url('../images/locationIcon.png') no-repeat left center;
-	height: 70px;
+  border-top: 2px solid #b7b7b7;
+  padding: 35px 0px 0px 50px;
+  background: url('../images/locationIcon.png') no-repeat left center;
+  height: 70px;
 }
 
-
-
 footer p {
-	font-size: .8em;
-	color: #3c3c3c;
-	clear:both;
-	text-transform: uppercase;
-	font-weight: 600;	
+  font-size: .8em;
+  color: #3c3c3c;
+  clear: both;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 address p {
-	font-size: .9em;
-	line-height: 1em;
-	color: #fff;
-	font-weight: 100;
+  font-size: .9em;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 100;
 }
 
-
 #map {
-	width: 36%;
-	height: 271px;
+  width: 36%;
+  height: 271px;
 }
 
 #hero {
-	width: 100%;
-	background: url('../images/firstwave.jpg') no-repeat -200px center;
-	color: #ffffff;
-	height: 600px;
+  width: 100%;
+  background: url('../images/firstwave.jpg') no-repeat -200px center;
+  color: #ffffff;
+  height: 600px;
 }
 
 #heroStatement {
-	padding: 48px 0px 42px 0px;
-	background-color: rgba(41,175,206,.7);
-	margin-bottom: 20px;
+  padding: 48px 0px 42px 0px;
+  background-color: rgba(41, 175, 206, .7);
+  margin-bottom: 20px;
 }
 
 #hero h1 {
-	font-size: 3em;
+  font-size: 3em;
 }
 
 #hero h2 {
-	font-weight: 100;
+  font-weight: 100;
 }
 
-
 button {
-	height: 118px;
-	font-size: 1.875em;
-	color: #29afce;
-	text-transform: uppercase;
-	border: none;
-	background-color: #ffffff;
-	margin-bottom: 30px;
+  height: 118px;
+  font-size: 1.875em;
+  color: #29afce;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .signUp {
-	background-color: #111111;
-	color: #ffffff;
+  background-color: #111111;
+  color: #ffffff;
 }
 
 #welcome {
-	font-family: Open Sans Light;
+  font-family: Open Sans Light;
 }
 
 #welcome > .container > .row > * {
-	padding-top: 60px;
+  padding-top: 60px;
 }
 
 #welcome h1 {
-	font-size: 3.75em;
-	font-weight: 100;
-	text-transform: uppercase;
-	color: #29afce;
-	line-height: 60px;
+  font-size: 3.75em;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #29afce;
+  line-height: 60px;
 }
 
 .left {
-	float: left;
-	width: 57.2649573%;
+  float: left;
+  width: 57.2649573%;
 }
 
 #welcome .side {
-	font-family: Sanchez Regular;
-	color: white;
-	background: #249ab6;
+  font-family: Sanchez Regular;
+  color: white;
+  background: #249ab6;
 }
 
 #welcome .side > * {
-	margin: 0px 30px;
+  margin: 0px 30px;
 }
 
 #welcome .side h2 {
-	font-size: 36pt;
+  font-size: 36pt;
 }
 
 #welcome .side p {
-	color: white;
-	font-family: Open Sans;
-	font-size: 1.1em;
+  color: white;
+  font-family: Open Sans;
+  font-size: 1.1em;
 }
 
 #welcome .side ul {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #welcome .side li {
-	margin-top: 25px;
-	font-size: 1.25em;
-	text-transform: uppercase;
-	line-height: 26px;
-	font-weight: 100;
-	text-align: center;
+  margin-top: 25px;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-weight: 100;
+  text-align: center;
 }
 
 #welcomeBlurb h1 {
-	font-family: Open Sans Light;
+  font-family: Open Sans Light;
 }
 
 #welcomeIdealPeople {
-	background: #249ab6;
-	font-family: Sanchez Regular;
-	color: white;
+  background: #249ab6;
+  font-family: Sanchez Regular;
+  color: white;
 }
 
-#welcomeIdealPeople p { color: white; }
+#welcomeIdealPeople p {
+  color: white;
+}
 
-#welcomeIdealPeople > * { margin: 20px; }
-
-#ventures {
-	background: url("../images/tampa_skyline.jpg") no-repeat;
+#welcomeIdealPeople > * {
+  margin: 20px;
 }
 
 #ventures {
-	padding-bottom: 120px;
+  background: url("../images/tampa_skyline.jpg") no-repeat;
+}
+
+#ventures {
+  padding-bottom: 120px;
 }
 
 #venturesContentArea {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 #ventures h1 {
-	max-width: 100%;
-	background-color: rgba(219, 228, 66, .7);
-	text-align: center;
-	font-size: 3.75em;
-	font-style: italic;
-	font-weight: 100;
-	margin:60px 0 0 0;
-	line-height: 70px;
-	padding: 30px;
+  max-width: 100%;
+  background-color: rgba(219, 228, 66, .7);
+  text-align: center;
+  font-size: 3.75em;
+  font-style: italic;
+  font-weight: 100;
+  margin: 60px 0 0 0;
+  line-height: 70px;
+  padding: 30px;
 }
 
 section#events {
-  background-color: #a1c935; 
+  background-color: #a1c935;
   position: relative;
   width: 100%;
   min-height: 660px;
 }
 
 #events ul {
-	margin: 0;
+  margin: 0;
 }
 
 .white {
@@ -730,13 +742,13 @@ section#events {
   text-align: center;
 }
 
-#events h1{
-	font-family: "Sanchez Regular";
-	font-size: 1.875em;
-	color: #fff;
-	font-weight: 100;
-	text-transform: none;
-	margin:20px 40px;
+#events h1 {
+  font-family: "Sanchez Regular";
+  font-size: 1.875em;
+  color: #fff;
+  font-weight: 100;
+  text-transform: none;
+  margin: 20px 40px;
 }
 
 .callout {
@@ -760,6 +772,35 @@ section#events {
 
 .event-listing {
   float: left;
-  margin-right: 40px;
-  width: 240px;
+  margin-right: 2%;
+  width: 45%;
+}
+
+section.credits {
+  color: #aaa;
+  background: #2e2e2e;
+  display: block;
+  clear: both;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+section.credits p {
+  color: black;
+}
+
+section.credits ul {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+
+section.credits li {
+  margin: 50px;
+  display: inline;
+}
+
+section.credits span {
+  margin-top: 20px;
+  display: inline-block;
 }

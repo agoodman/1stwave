@@ -1,0 +1,602 @@
+/**
+ * First Wave Venture Center
+ * File: responsive.css
+ *
+ * Modified by Ken@GyroscopeStudios.com
+ * May 2, 2013
+ */
+
+nav select {
+  display: none;
+}
+
+body {
+  font-size: 80%;
+}
+
+@media screen and (min-width: 501px) and (max-width: 960px) {
+
+
+  nav select {
+    display: none;
+  }
+
+  .container {
+    width: 100% !important;
+    float: none;
+    display: block;
+    clear: both;
+  }
+
+  html, body {
+    min-width: 0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header #social {
+    height: auto;
+    padding-bottom: 5px;
+  }
+
+  header #social ul,
+  header #social p {
+    float: none;
+    clear: both;
+    margin: 0 0 0 5px;
+  }
+
+  header #social li {
+    margin: 0;
+  }
+
+  header #social li a {
+    margin: 8px;
+  }
+
+  header nav {
+    position: relative;
+    height:100px;
+  }
+
+  header nav ul {
+    height: 25px;
+    width:500px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-250px;
+  }
+
+  header nav ul li {
+    margin: 0 8px;
+  }
+
+  #logo {
+    float: none;
+    margin: 25px auto;
+  }
+
+  #hero #heroStatement.span6 {
+    width: 100%;
+  }
+
+  #heroStatement.span6 h1,
+  #heroStatement.span6 h2 {
+    margin: 5px 25px;
+  }
+
+  #hero {
+    background-position: 45%;
+    padding-top: 50px;
+    height: 500px;
+  }
+
+  #hero #signUp,
+  #welcome .span8 {
+    width: 43.999%;
+    margin: 0 0 0 4.999%;
+  }
+
+  #hero #explore,
+  #welcome .span4 {
+    width: 43.999%;
+    margin: 0 3.999% 0 0;
+    float: right;
+  }
+
+  #displayedVentureBlurb {
+    width: 90%;
+    margin-left: 3.999%;
+  }
+
+  #ventureSlideshow {
+    width: 90%;
+    background: #fff;
+    margin-left: 3.999%;
+    padding: 10px;
+    height: 280px;
+  }
+
+  .slidesjs-navigation {
+    background: #000;
+    position: absolute;
+    bottom: -25px;
+    left: 3.999%;
+    color: #fff;
+    padding: 5px 25px;
+  }
+
+  #welcome .span4 {
+    min-height: 775px;
+    margin-right: 0;
+  }
+
+  #welcome .span8 {
+    margin-left: 4.999%;
+  }
+
+  #events .white,
+  #events .dark-green {
+    width: 66%;
+  }
+
+  #events .white {
+    height: 300px;
+  }
+
+  #events .callout h1,
+  #events .callout p {
+    margin-left: 3.999%
+  }
+
+  #events .dark-green {
+    height: 600px;
+    z-index: 0;
+  }
+
+  #events .column2 {
+    width: 33.999%;
+    float: right;
+    height: 860px;
+  }
+
+  #events .upcoming-header {
+    width: 100%;
+    background: #a1c935;
+    padding: 5px 15px;
+    height: auto;
+  }
+
+  #events #futureEvents li {
+    margin: 0 15px 15px 15px;
+  }
+
+  #events #futureEvents li:after {
+    line-height: 15px;
+    margin-top: 20px;
+  }
+
+  #events .event-listing {
+    margin-right: 0;
+    margin-left: 2%
+  }
+
+  #coworking h1 {
+    margin: 25px 45px;
+    line-height: 1.1em;
+  }
+
+  #coworking ul {
+    margin: 3.999%;
+  }
+
+  #coworking li.option:first-child,
+  #coworking li.option:last-child,
+  #coworking li.option {
+    width: 45.999%;
+    margin: 0 1.999% 3.999% 1.999%;
+  }
+
+  #coworking .dropin {
+    background: #fff;
+    display: block;
+    height: 100px;
+  }
+
+  #coworking .dropin label {
+    font-size: 24pt;
+    line-height: 40px;
+    width: 50%;
+    float: left;
+    background: url('../images/open_icon.jpg') no-repeat 10px center #ffffff;
+    padding: 5px 5px 0 65px;
+  }
+
+  #footer .container div {
+    float: none;
+    display: block;
+    clear: both;
+    width: 90%;
+    margin: 3.999%;
+  }
+
+  #footer #map {
+    width: 90%;
+  }
+
+  #footer p {
+    margin-left: 3.999%;
+  }
+
+  section.credits ul {
+    margin: 0;
+  }
+
+  section.credits li a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+  nav select {
+    display: block;
+    margin:0 auto 10px auto;
+  }
+
+  nav ul {
+    display: none;
+    margin:0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header #social {
+    height: auto;
+    padding-bottom: 5px;
+  }
+
+  header #social ul,
+  header #social p {
+    float: none;
+    clear: both;
+    margin: 0 0 0 5px;
+  }
+
+  header #social li {
+    margin: 0;
+  }
+
+  header #social li a {
+    margin: 8px;
+  }
+
+  header nav {
+    text-align: center;
+  }
+
+  header nav ul {
+    margin: 0;
+    clear: both;
+    height: auto;
+  }
+
+  header nav ul li {
+    margin: 5px;
+  }
+
+  #logo {
+    float: none;
+    margin: 25px auto;
+  }
+
+  #hero #heroStatement.span6 {
+    width: 100%;
+  }
+
+  #heroStatement.span6 h1,
+  #heroStatement.span6 h2 {
+    margin: 5px 25px;
+  }
+
+  #hero {
+    background-position: 45%;
+    padding-top: 50px;
+    height: 500px;
+  }
+
+  #hero #signUp,
+  #welcome .span8 {
+    width: 43.999%;
+    margin: 0 0 0 4.999%;
+  }
+
+  #hero #explore,
+  #welcome .span4 {
+    width: 43.999%;
+    margin: 0 3.999% 0 0;
+    float: right;
+  }
+
+  #displayedVentureBlurb {
+    width: 90%;
+    margin-left: 3.999%;
+  }
+
+  #ventureSlideshow {
+    width: 90%;
+    background: #fff;
+    margin-left: 3.999%;
+    padding: 10px;
+    height: 280px;
+  }
+
+  .container {
+    width: 100% !important;
+    float: none;
+    display: block;
+    clear: both;
+  }
+
+  html, body {
+    min-width: 0;
+  }
+
+  nav select {
+    clear: both;
+    display: block;
+  }
+
+  #social li:first-child {
+    display: none;
+  }
+
+  #heroStatement {
+    margin: 0;
+    padding: 0;;
+  }
+
+  #hero #heroStatement h1 {
+    padding:0;
+    margin:0;
+  }
+
+  #hero .row {
+    width: 93.999%;
+    margin:0;
+    padding:3%;
+  }
+
+  #hero .container {
+    padding:0;
+    margin:0;
+    width:100%;
+  }
+
+  #heroStatement.span6 h1,
+  #heroStatement.span6 h2 {
+    margin: 0 15px;
+  }
+
+  #hero {
+    background-position: 45%;
+    padding: 0;
+    margin:0;
+    height: auto;
+  }
+
+  #hero #signUp {
+    width: 49.999%;
+    margin: 0;
+  }
+
+  #hero #explore {
+    width: 49.999%;
+    float:right;
+    margin:0;
+    color:#fff;
+    background: #249ab6;
+  }
+
+  #welcome .row {
+    width:93.999%;
+    margin:0;
+    padding:3%;
+  }
+
+  #welcome .span8,
+  #welcome .span4 {
+    width: 100%;
+    margin: 0;
+    padding:0;
+    float: none;
+    clear:both;
+  }
+
+  #welcome .span8 h1 {
+    margin-top:0;
+  }
+
+  #displayedVentureBlurb {
+    width: 90%;
+    margin-left: 3.999%;
+  }
+
+  #ventureSlideshow {
+    width: 93.999%;
+    background: #fff;
+    margin: 0;
+    padding:3%;
+    height: 180px;
+  }
+
+  #displayedVentureBlurb {
+    margin:0;
+    padding:3%;
+    width:93.999%;
+    height:180px;
+  }
+
+  .slidesjs-navigation {
+    background: #000;
+    position: absolute;
+    bottom: -25px;
+    left: 3.999%;
+    color: #fff;
+    padding: 5px 25px;
+  }
+
+  #welcome .span4,
+  #welcome .span8 {
+    margin: 0;
+    width:100%;
+  }
+
+  #events .white,
+  #events .dark-green {
+    width: 100%;
+    float:none;
+    clear:both;
+    display: block;
+  }
+
+  #events .white {
+    height: 200px;
+  }
+
+  #events .column1 {
+    width:100%;
+    display: block;
+    clear:both;
+    margin:0;
+  }
+
+  #events .callout {
+    padding:0;
+  }
+
+  #events .callout h1,
+  #events .callout p {
+    margin:0;
+    display: block;
+    width:100%;
+  }
+
+  #events .dark-green {
+    display: none;
+  }
+
+  #events .column1,
+  #events .column2 {
+    width: 100%;
+    float: none;
+    height: auto;
+    clear:both;
+  }
+
+  #events .upcoming-header {
+    background: #78a900;
+    padding: 5px 0 5px 5px;
+    height: auto;
+  }
+
+  #events .callout {
+    padding: 15px;
+  }
+
+  #events #futureEvents li {
+    margin: 0 15px 15px 15px;
+  }
+
+  #events #futureEvents li:after {
+    line-height: 15px;
+    margin-top: 20px;
+  }
+
+  #events .upcoming-header {
+    margin:0;
+  }
+
+  #events .event-listing {
+    margin-right: 0;
+    margin-left: 2%
+  }
+
+  #coworking h1 {
+    margin: 25px 45px;
+    line-height: 1.1em;
+  }
+
+  #coworking ul {
+    margin: 3.999%;
+  }
+
+  #coworking li.option:first-child,
+  #coworking li.option:last-child,
+  #coworking li.option {
+    width: 45.999%;
+    margin: 0 1.999% 3.999% 1.999%;
+  }
+
+  #coworking .dropin {
+    background: #fff;
+    display: block;
+    height: auto;
+    width:100%;
+  }
+
+  #coworking .dropin label {
+    font-size: 24pt;
+    line-height: 40px;
+    float: none;
+    background: url('../images/open_icon.jpg') no-repeat 10px center #ffffff;
+    padding-left: 15%;
+    width:80%;
+  }
+
+  #coworking .dropin button {
+    width:100%;
+    margin:0;
+  }
+
+  #footer .container div {
+    float: none;
+    display: block;
+    clear: both;
+    width: 90%;
+    margin: 3.999%;
+  }
+
+  #footer #map {
+    width: 90%;
+  }
+
+  #footer p {
+    margin-left: 3.999%;
+  }
+
+  section.credits ul {
+    margin: 0;
+  }
+
+  section.credits li a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;;
+  }
+
+  section.credits span {
+    width: 70%;
+  }
+
+}
