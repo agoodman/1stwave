@@ -714,12 +714,12 @@ section#events {
 
 .dark-green {
   background-color: #78a900;
-  height: 400px;
+  height: 440px;
   position: absolute;
   margin: 0;
   left: 0px;
   top: 260px;
-  width: 62%;
+  width: 61.555%;
   z-index: 0;
 }
 

@@ -532,8 +532,34 @@ body {
   }
 
   #coworking h1 {
-    margin: 25px 45px;
+    margin: 15px 45px;
     line-height: 1.1em;
+  }
+
+  #coworking h2 {
+    padding: 10px;
+    min-height: 0;
+    line-height: 1.4em;
+  }
+
+  #coworking h3 {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  #coworking h4 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #a1a1a1;
+  }
+
+  #coworking p {
+    color: #a1a1a1;
+    font-size: 1.1em;
+    text-align: center;
+    width:95%;
+    margin:auto;
   }
 
   #coworking ul {
