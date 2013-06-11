@@ -153,13 +153,13 @@
 }
 
 #events h5 + p {
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7)!important;
   font-weight: 100;
   line-height: 1.5em;
 }
 
 #futureEvents {
-  height: 100%;
+  height: 740px;
   background: #9ccb3b;
   margin-left: 0;
 }
@@ -280,6 +280,15 @@
   text-align: center;
 }
 
+#coworking a {
+  color: #fff;
+}
+
+#coworking a:hover {
+  border-bottom: dotted 1px #fff;
+  text-decoration: none;
+}
+
 #coworking li > ul {
   border-top: 1px solid #a1a1a1;
   height: 220px;
@@ -299,10 +308,6 @@
   line-height: 100px;
   text-transform: uppercase;
   font-size: 24pt;
-}
-
-#coworking span {
-  cursor: pointer;
 }
 
 #coworking .dropin {
@@ -706,7 +711,7 @@ section#events {
   height: 40px;
   margin: 0;
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 100px;
   width: 62%;
   z-index: 0;
@@ -714,7 +719,7 @@ section#events {
 
 .dark-green {
   background-color: #78a900;
-  height: 440px;
+  height: 480px;
   position: absolute;
   margin: 0;
   left: 0px;
@@ -749,6 +754,10 @@ section#events {
   margin: 20px 40px;
 }
 
+#events p {
+  color: inherit;
+}
+
 .callout {
   padding-top: 10px;
 }
@@ -758,19 +767,45 @@ section#events {
 }
 
 .events-list {
-  height: 100px;
-  padding-top: 40px;
+  min-height: 450px;
+  padding-top: 0;
+  position: relative;
+  margin-right:25px;
 }
 
 .events {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  display: inline;
+  color:#fff;
 }
 
 .event-listing {
   float: left;
   margin-right: 2%;
   width: 45%;
+}
+
+.cal-lpointer,
+.cal-rpointer {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  margin-top:-16px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 35px;
+  text-align: center;
+  padding-right:-3px;
+}
+
+.cal-lpointer {
+  left:-42px;
 }
 
 section.credits {

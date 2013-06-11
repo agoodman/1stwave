@@ -3,7 +3,7 @@
  * File: responsive.css
  *
  * Modified by Ken@GyroscopeStudios.com
- * May 2, 2013
+ * June 10, 2013
  */
 
 nav select {
@@ -180,8 +180,31 @@ body {
   }
 
   #events .event-listing {
-    margin-right: 0;
-    margin-left: 2%
+    margin-left: 13%;
+    width:80%;
+  }
+
+  #events .cal-lpointer,
+  #events .cal-rpointer {
+    position: absolute;
+    right:-25px;
+    top: 50%;
+    margin-top:-16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    padding-right:-3px;
+    cursor: pointer;
+  }
+
+  .cal-lpointer {
+    left:0;
   }
 
   #coworking h1 {
@@ -527,8 +550,31 @@ body {
   }
 
   #events .event-listing {
-    margin-right: 0;
-    margin-left: 2%
+    margin-left: 12%;
+    width:80%;
+  }
+
+  #events .cal-lpointer,
+  #events .cal-rpointer {
+    position: absolute;
+    right:-25px;
+    top: 50%;
+    margin-top:-16px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    padding-right:-3px;
+    cursor: pointer;
+  }
+
+  #events .cal-lpointer {
+    left:0;
   }
 
   #coworking h1 {
